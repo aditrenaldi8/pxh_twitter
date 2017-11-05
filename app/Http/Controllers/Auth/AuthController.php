@@ -68,9 +68,5 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
-
-        echo "<pre>";
-        var_dump($save);die;
-        echo "</pre>";
     }
 }
